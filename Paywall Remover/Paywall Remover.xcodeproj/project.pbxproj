@@ -1,0 +1,597 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 110;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EAE1B995308B0AC900518BDE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE1B994308B0AC900518BDE /* AppDelegate.swift */; };
+		EAE1B999308B0AC900518BDE /* Main.html in Resources */ = {isa = PBXBuildFile; fileRef = EAE1B997308B0AC900518BDE /* Main.html */; };
+		EAE1B99B308B0AC900518BDE /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = EAE1B99A308B0AC900518BDE /* Icon.png */; };
+		EAE1B99D308B0AC900518BDE /* Style.css in Resources */ = {isa = PBXBuildFile; fileRef = EAE1B99C308B0AC900518BDE /* Style.css */; };
+		EAE1B99F308B0AC900518BDE /* Script.js in Resources */ = {isa = PBXBuildFile; fileRef = EAE1B99E308B0AC900518BDE /* Script.js */; };
+		EAE1B9A1308B0AC900518BDE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE1B9A0308B0AC900518BDE /* ViewController.swift */; };
+		EAE1B9A4308B0AC900518BDE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAE1B9A2308B0AC900518BDE /* Main.storyboard */; };
+		EAE1B9A6308B0ACA00518BDE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAE1B9A5308B0ACA00518BDE /* Assets.xcassets */; };
+		EAE1B9AD308B0ACA00518BDE /* Paywall Remover Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = EAE1B9AC308B0ACA00518BDE /* Paywall Remover Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		EAE1B9B2308B0ACA00518BDE /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE1B9B1308B0ACA00518BDE /* SafariWebExtensionHandler.swift */; };
+		EAE1B9C4308B0ACA00518BDE /* popup.js in Resources */ = {isa = PBXBuildFile; fileRef = EAE1B9BE308B0ACA00518BDE /* popup.js */; };
+		EAE1B9C5308B0ACA00518BDE /* content.css in Resources */ = {isa = PBXBuildFile; fileRef = EAE1B9BF308B0ACA00518BDE /* content.css */; };
+		EAE1B9C6308B0ACA00518BDE /* popup.html in Resources */ = {isa = PBXBuildFile; fileRef = EAE1B9C0308B0ACA00518BDE /* popup.html */; };
+		EAE1B9C7308B0ACA00518BDE /* icons in Resources */ = {isa = PBXBuildFile; fileRef = EAE1B9C1308B0ACA00518BDE /* icons */; };
+		EAE1B9C8308B0ACA00518BDE /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = EAE1B9C2308B0ACA00518BDE /* manifest.json */; };
+		EAE1B9C9308B0ACA00518BDE /* content.js in Resources */ = {isa = PBXBuildFile; fileRef = EAE1B9C3308B0ACA00518BDE /* content.js */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EAE1B9AE308B0ACA00518BDE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EAE1B989308B0AC900518BDE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EAE1B9AB308B0ACA00518BDE;
+			remoteInfo = "Paywall Remover Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		EAE1B9B9308B0ACA00518BDE /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			dstPath = "";
+			dstSubfolder = PlugIns;
+			files = (
+				EAE1B9AD308B0ACA00518BDE /* Paywall Remover Extension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		EAE1B991308B0AC900518BDE /* Paywall Remover.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Paywall Remover.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAE1B994308B0AC900518BDE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EAE1B998308B0AC900518BDE /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = Base; path = Base.lproj/Main.html; sourceTree = "<group>"; };
+		EAE1B99A308B0AC900518BDE /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		EAE1B99C308B0AC900518BDE /* Style.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = Style.css; sourceTree = "<group>"; };
+		EAE1B99E308B0AC900518BDE /* Script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = Script.js; sourceTree = "<group>"; };
+		EAE1B9A0308B0AC900518BDE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EAE1B9A3308B0AC900518BDE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EAE1B9A5308B0ACA00518BDE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EAE1B9A7308B0ACA00518BDE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EAE1B9AC308B0ACA00518BDE /* Paywall Remover Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Paywall Remover Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAE1B9B1308B0ACA00518BDE /* SafariWebExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariWebExtensionHandler.swift; sourceTree = "<group>"; };
+		EAE1B9B3308B0ACA00518BDE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EAE1B9BE308B0ACA00518BDE /* popup.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = popup.js; path = Resources/popup.js; sourceTree = "<group>"; };
+		EAE1B9BF308B0ACA00518BDE /* content.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; name = content.css; path = Resources/content.css; sourceTree = "<group>"; };
+		EAE1B9C0308B0ACA00518BDE /* popup.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = popup.html; path = Resources/popup.html; sourceTree = "<group>"; };
+		EAE1B9C1308B0ACA00518BDE /* icons */ = {isa = PBXFileReference; lastKnownFileType = folder; name = icons; path = Resources/icons; sourceTree = "<group>"; };
+		EAE1B9C2308B0ACA00518BDE /* manifest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = manifest.json; path = Resources/manifest.json; sourceTree = "<group>"; };
+		EAE1B9C3308B0ACA00518BDE /* content.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = content.js; path = Resources/content.js; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EAE1B98E308B0AC900518BDE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			files = (
+			);
+		};
+		EAE1B9A9308B0ACA00518BDE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			files = (
+			);
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EAE1B988308B0AC900518BDE = {
+			isa = PBXGroup;
+			children = (
+				EAE1B993308B0AC900518BDE /* Paywall Remover */,
+				EAE1B9B0308B0ACA00518BDE /* Paywall Remover Extension */,
+				EAE1B992308B0AC900518BDE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EAE1B992308B0AC900518BDE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EAE1B991308B0AC900518BDE /* Paywall Remover.app */,
+				EAE1B9AC308B0ACA00518BDE /* Paywall Remover Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EAE1B993308B0AC900518BDE /* Paywall Remover */ = {
+			isa = PBXGroup;
+			children = (
+				EAE1B994308B0AC900518BDE /* AppDelegate.swift */,
+				EAE1B9A0308B0AC900518BDE /* ViewController.swift */,
+				EAE1B9A2308B0AC900518BDE /* Main.storyboard */,
+				EAE1B9A5308B0ACA00518BDE /* Assets.xcassets */,
+				EAE1B9A7308B0ACA00518BDE /* Info.plist */,
+				EAE1B996308B0AC900518BDE /* Resources */,
+			);
+			path = "Paywall Remover";
+			sourceTree = "<group>";
+		};
+		EAE1B996308B0AC900518BDE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EAE1B997308B0AC900518BDE /* Main.html */,
+				EAE1B99A308B0AC900518BDE /* Icon.png */,
+				EAE1B99C308B0AC900518BDE /* Style.css */,
+				EAE1B99E308B0AC900518BDE /* Script.js */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		EAE1B9B0308B0ACA00518BDE /* Paywall Remover Extension */ = {
+			isa = PBXGroup;
+			children = (
+				EAE1B9BD308B0ACA00518BDE /* Resources */,
+				EAE1B9B1308B0ACA00518BDE /* SafariWebExtensionHandler.swift */,
+				EAE1B9B3308B0ACA00518BDE /* Info.plist */,
+			);
+			path = "Paywall Remover Extension";
+			sourceTree = "<group>";
+		};
+		EAE1B9BD308B0ACA00518BDE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EAE1B9BE308B0ACA00518BDE /* popup.js */,
+				EAE1B9BF308B0ACA00518BDE /* content.css */,
+				EAE1B9C0308B0ACA00518BDE /* popup.html */,
+				EAE1B9C1308B0ACA00518BDE /* icons */,
+				EAE1B9C2308B0ACA00518BDE /* manifest.json */,
+				EAE1B9C3308B0ACA00518BDE /* content.js */,
+			);
+			name = Resources;
+			path = "Paywall Remover Extension";
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EAE1B990308B0AC900518BDE /* Paywall Remover */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EAE1B9BA308B0ACA00518BDE /* Build configuration list for PBXNativeTarget "Paywall Remover" */;
+			buildPhases = (
+				EAE1B98D308B0AC900518BDE /* Sources */,
+				EAE1B98E308B0AC900518BDE /* Frameworks */,
+				EAE1B98F308B0AC900518BDE /* Resources */,
+				EAE1B9B9308B0ACA00518BDE /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EAE1B9AF308B0ACA00518BDE /* PBXTargetDependency */,
+			);
+			name = "Paywall Remover";
+			productName = "Paywall Remover";
+			productReference = EAE1B991308B0AC900518BDE /* Paywall Remover.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EAE1B9AB308B0ACA00518BDE /* Paywall Remover Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EAE1B9B6308B0ACA00518BDE /* Build configuration list for PBXNativeTarget "Paywall Remover Extension" */;
+			buildPhases = (
+				EAE1B9A8308B0ACA00518BDE /* Sources */,
+				EAE1B9A9308B0ACA00518BDE /* Frameworks */,
+				EAE1B9AA308B0ACA00518BDE /* Resources */,
+			);
+			buildRules = (
+			);
+			name = "Paywall Remover Extension";
+			productName = "Paywall Remover Extension";
+			productReference = EAE1B9AC308B0ACA00518BDE /* Paywall Remover Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EAE1B989308B0AC900518BDE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2700;
+				LastUpgradeCheck = 2700;
+				TargetAttributes = {
+					EAE1B990308B0AC900518BDE = {
+						CreatedOnToolsVersion = 27.0;
+					};
+					EAE1B9AB308B0ACA00518BDE = {
+						CreatedOnToolsVersion = 27.0;
+					};
+				};
+			};
+			buildConfigurationList = EAE1B98C308B0AC900518BDE /* Build configuration list for PBXProject "Paywall Remover" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EAE1B988308B0AC900518BDE;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = EAE1B992308B0AC900518BDE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EAE1B990308B0AC900518BDE /* Paywall Remover */,
+				EAE1B9AB308B0ACA00518BDE /* Paywall Remover Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EAE1B98F308B0AC900518BDE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			files = (
+				EAE1B99B308B0AC900518BDE /* Icon.png in Resources */,
+				EAE1B9A4308B0AC900518BDE /* Main.storyboard in Resources */,
+				EAE1B99F308B0AC900518BDE /* Script.js in Resources */,
+				EAE1B999308B0AC900518BDE /* Main.html in Resources */,
+				EAE1B9A6308B0ACA00518BDE /* Assets.xcassets in Resources */,
+				EAE1B99D308B0AC900518BDE /* Style.css in Resources */,
+			);
+		};
+		EAE1B9AA308B0ACA00518BDE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			files = (
+				EAE1B9C9308B0ACA00518BDE /* content.js in Resources */,
+				EAE1B9C4308B0ACA00518BDE /* popup.js in Resources */,
+				EAE1B9C7308B0ACA00518BDE /* icons in Resources */,
+				EAE1B9C8308B0ACA00518BDE /* manifest.json in Resources */,
+				EAE1B9C6308B0ACA00518BDE /* popup.html in Resources */,
+				EAE1B9C5308B0ACA00518BDE /* content.css in Resources */,
+			);
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EAE1B98D308B0AC900518BDE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			files = (
+				EAE1B9A1308B0AC900518BDE /* ViewController.swift in Sources */,
+				EAE1B995308B0AC900518BDE /* AppDelegate.swift in Sources */,
+			);
+		};
+		EAE1B9A8308B0ACA00518BDE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			files = (
+				EAE1B9B2308B0ACA00518BDE /* SafariWebExtensionHandler.swift in Sources */,
+			);
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EAE1B9AF308B0ACA00518BDE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EAE1B9AB308B0ACA00518BDE /* Paywall Remover Extension */;
+			targetProxy = EAE1B9AE308B0ACA00518BDE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EAE1B997308B0AC900518BDE /* Main.html */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EAE1B998308B0AC900518BDE /* Base */,
+			);
+			name = Main.html;
+			sourceTree = "<group>";
+		};
+		EAE1B9A2308B0AC900518BDE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EAE1B9A3308B0AC900518BDE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EAE1B9B4308B0ACA00518BDE /* Debug configuration for PBXProject "Paywall Remover" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 27.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EAE1B9B5308B0ACA00518BDE /* Release configuration for PBXProject "Paywall Remover" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 27.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		EAE1B9B7308B0ACA00518BDE /* Debug configuration for PBXNativeTarget "Paywall Remover Extension" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Paywall Remover Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Paywall Remover Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.toddbruss.PaywallRemover.Extension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		EAE1B9B8308B0ACA00518BDE /* Release configuration for PBXNativeTarget "Paywall Remover Extension" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Paywall Remover Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Paywall Remover Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.toddbruss.PaywallRemover.Extension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		EAE1B9BB308B0ACA00518BDE /* Debug configuration for PBXNativeTarget "Paywall Remover" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Paywall Remover/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Paywall Remover";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				INFOPLIST_KEY_NSViewGestureRecognizerIsExclusive = NO;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.toddbruss.PaywallRemover;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		EAE1B9BC308B0ACA00518BDE /* Release configuration for PBXNativeTarget "Paywall Remover" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Paywall Remover/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Paywall Remover";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				INFOPLIST_KEY_NSViewGestureRecognizerIsExclusive = NO;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.toddbruss.PaywallRemover;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EAE1B98C308B0AC900518BDE /* Build configuration list for PBXProject "Paywall Remover" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EAE1B9B4308B0ACA00518BDE /* Debug configuration for PBXProject "Paywall Remover" */,
+				EAE1B9B5308B0ACA00518BDE /* Release configuration for PBXProject "Paywall Remover" */,
+			);
+			defaultConfigurationName = Release;
+		};
+		EAE1B9B6308B0ACA00518BDE /* Build configuration list for PBXNativeTarget "Paywall Remover Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EAE1B9B7308B0ACA00518BDE /* Debug configuration for PBXNativeTarget "Paywall Remover Extension" */,
+				EAE1B9B8308B0ACA00518BDE /* Release configuration for PBXNativeTarget "Paywall Remover Extension" */,
+			);
+			defaultConfigurationName = Release;
+		};
+		EAE1B9BA308B0ACA00518BDE /* Build configuration list for PBXNativeTarget "Paywall Remover" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EAE1B9BB308B0ACA00518BDE /* Debug configuration for PBXNativeTarget "Paywall Remover" */,
+				EAE1B9BC308B0ACA00518BDE /* Release configuration for PBXNativeTarget "Paywall Remover" */,
+			);
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EAE1B989308B0AC900518BDE /* Project object */;
+	validationLevel = 1;
+}

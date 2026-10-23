@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <style>
+    body { font: 13px -apple-system, sans-serif; width: 240px; margin: 12px; }
+    h1 { font-size: 15px; margin: 0 0 8px; }
+    label { display: flex; align-items: center; gap: 6px; margin: 6px 0; }
+    button { width: 100%; margin-top: 8px; padding: 6px; }
+    #status { color: #666; margin-top: 8px; }
+  </style>
+</head>
+<body>
+  <h1>Paywall Remover</h1>
+  <label><input type="checkbox" id="global"> Enabled everywhere</label>
+  <label><input type="checkbox" id="site"> Enabled on <b id="host">this site</b></label>
+  <button id="clean">Remove paywall now</button>
+  <div id="status"></div>
+  <script src="popup.js"></script>
+</body>
+</html>

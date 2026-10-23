@@ -1,0 +1,7 @@
+/* Restore scrolling that paywall modals lock. Applied only when enabled. */
+html.pwr-active,
+html.pwr-active body {
+  overflow: auto !important;
+  position: static !important;
+  height: auto !important;
+}
